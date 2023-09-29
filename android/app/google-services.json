@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "325473332835",
+    "project_id": "travelproj-93cf6",
+    "storage_bucket": "travelproj-93cf6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325473332835:android:d811064817a307b2bb1256",
+        "android_client_info": {
+          "package_name": "com.example.ninja_id"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325473332835-uieu7iovp9qkqchracovkatqa0vi1g7k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ninja_id",
+            "certificate_hash": "e40676e416b7548a5ef3cecf4096b2ba3a1bce79"
+          }
+        },
+        {
+          "client_id": "325473332835-n6rptqjhuadn9cfh8ggahmhh9ro7ia5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATtQiyvxxqwIj9gX2Wbu9cyNI0iOz6XCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325473332835-n6rptqjhuadn9cfh8ggahmhh9ro7ia5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
