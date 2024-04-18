@@ -1,4 +1,4 @@
-# Itenerary Generating Travel App
+# Itinerary Generating Travel App
 
 A Flutter project.
 
