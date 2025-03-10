@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "898830787471",
+    "project_id": "travel-itinerary-gen",
+    "storage_bucket": "travel-itinerary-gen.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898830787471:android:9c78755b1acfd9443321fa",
+        "android_client_info": {
+          "package_name": "Travel.Itinerary.Generator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsivp0NtyHf-WxXtNrSPnIwXJNkqvNINk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

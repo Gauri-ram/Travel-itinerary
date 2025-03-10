@@ -41,7 +41,8 @@ class _SignInScreenState extends State<SignInScreen> {
 
   void signIn() async {
     try {
-      UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
+      UserCredential userCredential =
+          await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: _emailTextController.text,
         password: _passwordTextController.text,
       );
@@ -58,7 +59,8 @@ class _SignInScreenState extends State<SignInScreen> {
         // Navigate to the HomeScreen while passing the username
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => HomeScreen(username: username)),
+          MaterialPageRoute(
+              builder: (context) => HomeScreen(username: username)),
         );
       }
     } catch (error) {
@@ -67,20 +69,22 @@ class _SignInScreenState extends State<SignInScreen> {
     }
   }
 
-
-
-
-@override
+  @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
+
     return Scaffold(
       body: Stack(
         children: [
           // Background Image
-          Image.asset(
-            'assets/travel_1.jpg', // Replace with your image asset path
-            width: double.infinity,
-            height: double.infinity,
-            fit: BoxFit.cover,
+          Expanded(
+            child: Image.asset(
+              'assets/travel_1.jpg', // Replace with your image asset path
+              width: double.infinity,
+              height: double.infinity,
+              fit: BoxFit.cover,
+            ),
           ),
           // Centered Content
           Center(
@@ -88,9 +92,9 @@ class _SignInScreenState extends State<SignInScreen> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(height: MediaQuery.of(context).size.height * 0.1),
+                  SizedBox(height: screenHeight * 0.05),
                   CustomLogoIcon(),
-                  SizedBox( height:20),
+                  SizedBox(height: screenHeight * 0.005),
                   Text(
                     "Welcome!",
                     style: TextStyle(
@@ -98,9 +102,6 @@ class _SignInScreenState extends State<SignInScreen> {
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
-                  ),
-                  SizedBox(
-                    height: 8,
                   ),
                   Text(
                     "Discover Your Next Adventure!",
@@ -111,7 +112,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     ),
                   ),
                   SizedBox(
-                    height: 30,
+                    height: screenHeight * 0.006,
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 10, 16, 5),
@@ -119,7 +120,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         Icons.email_outlined, false, _emailTextController),
                   ),
                   SizedBox(
-                    height: 5,
+                    height: screenHeight * 0.01,
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 10, 16, 5),
@@ -133,14 +134,16 @@ class _SignInScreenState extends State<SignInScreen> {
                     padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
                     child: forgotPassword(context),
                   ),
-                  CustomButton(context, "SIGN IN", signIn,(){}),
+                  CustomButton(context, "SIGN IN", signIn, () {}),
                   signUpOption(),
-
                   TextButton(
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => HomeScreen(username: 'guest user',)),
+                        MaterialPageRoute(
+                            builder: (context) => HomeScreen(
+                                  username: 'guest user',
+                                )),
                       );
                     },
                     child: Text(

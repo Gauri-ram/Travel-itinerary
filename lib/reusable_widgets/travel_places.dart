@@ -23,4 +23,52 @@ List<TravelPlaces> travelPlace = [
     name: "Ladakh",
     image: "assets/ladakh.jpg",
   ),
+  TravelPlaces(
+    name: "Pondicherry",
+    image: "assets/pondicherry.jpg",
+  ),
+  TravelPlaces(
+    name: "Spain",
+    image: "assets/spain.jpg",
+  ),
+  TravelPlaces(
+    name: "Switzerland",
+    image: "assets/switzerland.jpg",
+  ),
+  TravelPlaces(
+    name: "Singapore",
+    image: "assets/singapore.jpg",
+  ),
+  TravelPlaces(
+    name: "France",
+    image: "assets/france.jpg",
+  ),
+  TravelPlaces(
+    name: "Germany",
+    image: "assets/germany.jpg",
+  ),
+  TravelPlaces(
+    name: "Russia",
+    image: "assets/russia.jpg",
+  ),
+  TravelPlaces(
+    name: "Kenya",
+    image: "assets/kenya.jpg",
+  ),
+  TravelPlaces(
+    name: "Australia",
+    image: "assets/australia.jpg",
+  ),
+  TravelPlaces(
+    name: "Brazil",
+    image: "assets/brazil.jpg",
+  ),
+  TravelPlaces(
+    name: "Canada",
+    image: "assets/canada.jpg",
+  ),
+  TravelPlaces(
+    name: "China",
+    image: "assets/china.jpg",
+  ),
 ];
