@@ -159,7 +159,10 @@ class PlaceDetailsPage extends StatelessWidget {
           }),
         ],
       ),
-      drawer: NaviDrawer(username: username),
+      drawer: NaviDrawer(
+        username: username,
+        currentPage: 'popularplaces',
+      ),
       body: Center(
         child: Flexible(
           child: Column(

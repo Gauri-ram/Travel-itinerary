@@ -42,6 +42,16 @@ class _ItineraryInputsState extends State<ItineraryInputs> {
         toolbarHeight: 40,
         backgroundColor: const Color.fromARGB(255, 233, 234, 235),
         elevation: 0,
+        leading: Builder(
+          builder: (BuildContext context) {
+            return IconButton(
+              icon: Icon(Icons.house_outlined),
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+            );
+          },
+        ),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.arrow_back), // Back button icon
@@ -49,20 +59,10 @@ class _ItineraryInputsState extends State<ItineraryInputs> {
               Navigator.of(context).pop();
             },
           ),
-          Builder(
-            builder: (BuildContext context) {
-              return IconButton(
-                icon: Icon(Icons.house_outlined),
-                onPressed: () {
-                  // Open the navigation drawer
-                  Scaffold.of(context).openDrawer();
-                },
-              );
-            },
-          ),
         ],
       ),
-      drawer: NaviDrawer(username: widget.username),
+      drawer: NaviDrawer(
+          username: widget.username, currentPage: 'itnineraryinputs'),
       backgroundColor: Colors.white,
       body: Stack(
         children: [
